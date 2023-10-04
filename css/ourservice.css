@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Montserrat", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #EAF4FB;
+}
+header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+}
+/* navbar */
+.navbar {
+    background-color: #EAF4FB;
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.navbar .hamburger-btn {
+    display: none;
+    color: #17206D;
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 30px;
+    padding-left: 10px;
+}
+
+.navbar .logo {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 3%;
+}
+
+.navbar .logo img {
+    width: 60px;
+}
+
+.navbar .logo h2 {
+    color: #17206D;
+    font-weight: 550;
+    font-size: 1.1rem;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.navbar .links a {
+    color: #17206D;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.1s ease;
+}
+
+.navbar a.active {
+    border-bottom: 2px solid #17206D;
+    transition: border-bottom 0.1s ease;
+}
+
+
+.navbar .links a:hover {
+    color: #17206d75;
+}
+
+
+.navbar .login-btn {
+    border: none;
+    outline: none;
+    background: #17206D;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+.navbar .login-btn:hover {
+    background: #17206d75;
+}
+
+
+/* service landing */
+.container1{
+    width:100%;
+    height :100vh;
+    display : flex;
+    align-items: center;
+    padding : 70px 10% 0;
+    justify-content: space-between;
+}
+/* service menu */
+.service-provide  {
+    width:100%;
+    height :100vh;
+    align-items: center;
+    padding : 150px 30% 0;
+    justify-content: space-between;
+    padding-bottom: 300px;
+}
+.service-provide h1 {
+    font-size: 50px;
+    color : black
+}
+.service-provide p {
+    font-size: 20px;
+    color: black;
+    width: 500px;
+}
+.our-services {
+    align-items: center;
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: space-between;
+    border: 1px solid #333;
+    margin : 20px;
+    
+}
+.our-services-gambar img {
+    text-align: right;
+    flex: 1;
+    width: 300px;
+    border-radius: 10%;
+    margin : 20px;
+}
+.our-services-text {
+    flex: 2;
+    padding-left: 20px;
+    line-height: 1.3;
+    text-align: justify;
+    
+}
+.our-services-text p {
+    font-size: 14px;
+}
+.our-services-text h3 {
+    font-size: 20px;
+}
+
+/* book now */
+.booknow {
+    background-color: #17206D; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 20px; 
+    text-align: right;
+}
+  /* Style saat mengarahkan kursor ke tombol */
+  .booknow:hover {
+    background-color: #17206D;
+  }
+
+/* footer */
+/* .container{
+    background-color: #bbbeff;
+    margin: auto;
+    width: 100%;
+    padding: 40px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row ul{
+    list-style-type: none;
+}
+
+.footer {
+    background-color:#bbbeff;
+    box-sizing: border-box;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 17px;
+    color: #000000;
+}
+.footer-col p{
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
+.footer-col img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+.social-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+.footer {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1280px;
+    width: 100%;
+    background: #10182F;
+    border-radius: 6px;
+}
+
+.footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.footer-col .links {
+    margin-top: 20px;
+}
+
+.footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+    text-decoration: none;
+    color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+    color: #fff;
+}
+
+.logo-container {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    /* Set your desired background color here */
+    border-radius: 35%;
+}
+
+.logo-container img {
+    max-width: 100px;
+    max-height: 100px;
+
+}
+
+
+.footer-col p {
+    margin: 20px 0;
+    color: #bfbfbf;
+    max-width: 300px;
+}
+
+.footer-col form {
+    display: flex;
+    gap: 5px;
+}
+
+.footer-col input {
+    height: 40px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #7489C6;
+    caret-color: #fff;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+    color: #ccc;
+}
+
+.footer-col form button {
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+    background: #cecccc;
+}
+
+.footer-col .icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.footer-col .icons i {
+    color: #afb6c7;
+}
+
+.footer-col .icons i:hover {
+    color: #fff;
+}
+
+
+
+
+@media (max-width: 950px) {
+    .navbar :is(.hamburger-btn, .close-btn) {
+        display: block;
+    }
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .navbar .logo img {
+        display: none;
+    }
+
+    .navbar .logo h2 {
+        font-size: 1.4rem;
+    }
+
+    .navbar .links {
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        left: -100%;
+        display: block;
+        height: 100vh;
+        width: 100%;
+        padding-top: 60px;
+        text-align: center;
+        background: #fff;
+        transition: 0.2s ease;
+    }
+
+    .navbar .links.show-menu {
+        left: 0;
+    }
+
+    .navbar .links a {
+        display: inline-flex;
+        margin: 20px 0;
+        font-size: 1.2rem;
+        color: #000;
+    }
+
+    .navbar .links a:hover {
+        color: #17206d75;
+    }
+
+    .navbar .login-btn {
+        font-size: 0.9rem;
+        padding: 7px 10px;
+    }
+}
+
+@media (max-width: 760px) {
+    .form-popup {
+        width: 95%;
+    }
+
+    .form-box .form-details {
+        display: none;
+    }
+
+    .form-box .form-content {
+        padding: 30px 20px;
+    }
+
+
+    @media (max-width: 768px) {
+        .footer {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            transform: none;
+            width: 100%;
+            border-radius: 0;
+        }
+
+
+        .footer .footer-row {
+            padding: 20px;
+            gap: 1rem;
+        }
+
+        .footer-col form {
+            display: block;
+        }
+
+        .footer-col form :where(input, button) {
+            width: 100%;
+        }
+
+        .footer-col form button {
+            margin: 10px 0 0 0;
+        }
+    }
+
+@media(max-width:768px){
+    .footer-col{
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom:30px ;
+    }
+}
