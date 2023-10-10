@@ -118,7 +118,6 @@ header {
 /* .about-us */
 .about-us h1{
     font-weight: bold;
-    font-size: 40;
 }
 .about-us h2 {
     font-weight: lighter;
@@ -136,9 +135,6 @@ header {
 
 .about-us p {
     font-size: 15px;
-}
-
-.doctor {
 }
 
 .our-services {
@@ -475,5 +471,61 @@ header {
         .footer-col form button {
             margin: 10px 0 0 0;
         }
+    }
+}
+
+@media(max-width : 750px) {
+    .about-us {
+        font-size: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .our-services {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .our-services-gambar img {
+        padding: 10px;
+        padding-left: 1px;
+        width: 150px;
+    }
+    .our-services h3 {
+        font-size: 18px;
+    }
+    .our-services p {
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+    .center {
+        padding-top: 10px;
+    }
+}
+
+@media(max-width : 420px) {
+    .about-us {
+        font-size: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .our-services {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .our-services-gambar img {
+        padding: 10px;
+        padding-left: 1px;
+        width: 150px;
+    }
+    .our-services h3 {
+        font-size: 18px;
+    }
+    .our-services p {
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+    .center {
+        padding-top: 10px;
     }
 }

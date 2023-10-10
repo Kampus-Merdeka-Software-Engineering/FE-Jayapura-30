@@ -177,6 +177,10 @@ header {
     box-align: left;
 }
 
+.potowhy img {
+    border-radius: 20px;
+}
+
 .why {
     max-width: 500px;
 }
@@ -204,8 +208,9 @@ header {
 .service {
     background: linear-gradient(to bottom, #EAF4FB, #ffffff);
     padding: 70px;
-}
 
+
+}
 .ourservice {
 
     display: flex;
@@ -560,6 +565,58 @@ article p {
         font-size: 0.9rem;
         padding: 7px 10px;
     }
+
+    /* Main Content */
+    .container1{
+        padding: 70px 10px;
+    }
+
+    .ourservice {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .home {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .button a {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    .potowhy img {
+        width: 200px;
+        padding-left: 1px;
+    }
+
+    .why h1 {
+        font-size: 30px;
+    }
+
+    .why h2 {
+        font-size: 20px;
+    }
+
+    .why p {
+        font-size: 12px;
+    }
+
+    .gambar img {
+        width: 100px;
+        margin-right: 1px;
+    }
+
+    .caption {
+        font-size: 14px;
+    }
+
+
 }
 
 @media (max-width: 760px) {
@@ -605,3 +662,66 @@ article p {
         }
     }
 }
+
+@media(max-width: 610px) {
+        /* Main Content */
+        .container1{
+            padding: 70px 1px;
+        }
+    
+        .ourservice {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    
+        .home {
+            padding-right: 50px;
+            padding-left: 50px;
+            padding-top: 120px;
+        }
+    
+        .home h1 {
+            font-size: 20px;
+        }
+    
+        .button a {
+            font-size: 12px;
+            padding: 10px 20px;
+        }
+    
+        .potowhy img {
+            width: 140px;
+            padding-left: 1px;
+        }
+    
+        .why h1 {
+            font-size: 20px;
+        }
+    
+        .why h2 {
+            font-size: 10px;
+        }
+    
+        .why p {
+            font-size: 8px;
+            width: 250px;
+        }
+    
+        .gambar img {
+            width: 80px;
+            margin-right: 1px;
+        }
+    
+        .service {
+            padding: 20px;
+        }
+
+        .caption {
+            font-size: 12px;
+        }
+        
+        .review-container {
+            padding-top: 150px;
+        }
+    
+    }
